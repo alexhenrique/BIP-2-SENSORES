@@ -1,0 +1,99 @@
+
+;ARQUIVOS E DEFINIÇÕES
+
+  #INCLUDE <P16F628A.INC>
+
+  __CONFIG _BODEN_ON & _CP_OFF & _PWRTE_ON & _WDT_OFF & _LVP_OFF & _MCLRE_ON & _XT_OSC
+
+;PAGINAÇÃO DE MEMORIA
+
+  #DEFINE      BANK0       BCF     STATUS,RP0
+  #DEFINE      BANK1       BSF     STATUS,RP0
+
+;VARIAVEIS
+
+  CBLOCK 0X20
+	TEMPO1
+	TEMPO2
+	TEMPO3
+  ENDC
+
+;ENTRADAS
+
+  #DEFINE    BOTAO1  PORTA,0
+ 
+
+;SAIDAS
+
+  #DEFINE    LED1    PORTB,0
+
+;VETOR RESET
+
+  ORG       0X00
+  GOTO      INICIO
+
+;INTERRUPÇÃO
+
+  ORG 0X04
+  RETFIE
+
+;INICIO DO PROGRAMA
+
+INICIO
+
+  CLRF  PORTA
+  CLRF  PORTB
+  BANK1
+  MOVLW  B'00000001'
+  MOVWF  TRISA
+  MOVLW  B'00000000'
+  MOVWF  TRISB
+  MOVLW  B'10000000'
+  MOVWF  OPTION_REG
+  MOVLW  B'00000000'
+  MOVWF  INTCON
+  BANK0
+  MOVLW  B'00000111'
+  MOVWF  CMCON
+
+;ROTINA PRINCIPAL DO PROGRAMA
+
+   MAIN1
+
+       BTFSC  BOTAO1
+       GOTO   BOTAO1_OFF
+       GOTO   BOTAO1_ON
+
+   BOTAO1_ON 
+       BSF   LED1
+	   CALL TEMPA
+       GOTO  MAIN1
+
+   BOTAO1_OFF
+       BCF   LED1
+       GOTO  MAIN1
+
+
+TEMPA   	BTFSS  BOTAO1
+			CALL DELAY
+            decfsz      TEMPO1,F
+            goto        TEMPA
+            decfsz      TEMPO2,F
+            goto        TEMPA
+            decfsz      TEMPO3,F
+            goto        TEMPA
+            nop
+			RETURN
+
+DELAY       movlw       .93
+            movwf       TEMPO1
+            movlw       .38
+            movwf       TEMPO2
+            movlw       .11
+            movwf       TEMPO3
+			RETURN
+
+
+
+
+       END
