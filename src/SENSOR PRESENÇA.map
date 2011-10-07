@@ -1,0 +1,60 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Tue Oct 04 13:44:54 2011
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000004    program   0x0000c6
+.config_2007_SENSOR PRESENÇA.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000004    0x000066      
+                            0x002007    0x002007      
+            101 out of 2182 program addresses used, program memory utilization is 4%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      BIP   0x000057    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                    BIP_A   0x00005e    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+               BOTAO1_OFF   0x000019    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                BOTAO1_ON   0x000016    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+               BOTAO2_OFF   0x000023    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                BOTAO2_ON   0x000020    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                   INICIO   0x000005    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                    MAIN1   0x000013    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                    MAIN2   0x00001d    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                     RELE   0x00004a    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                   TEMP_A   0x000027    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                   TEMP_B   0x000035    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                     ZERA   0x000043    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000005    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                    MAIN1   0x000013    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                BOTAO1_ON   0x000016    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+               BOTAO1_OFF   0x000019    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                    MAIN2   0x00001d    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                BOTAO2_ON   0x000020    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+               BOTAO2_OFF   0x000023    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                   TEMP_A   0x000027    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                   TEMP_B   0x000035    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                     ZERA   0x000043    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                     RELE   0x00004a    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                      BIP   0x000057    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+                    BIP_A   0x00005e    program     static E:\#ELETRONICA#\A MONTAR\SENSOR DUPLO\SENSOR PRESENÇA.asm
+
+
